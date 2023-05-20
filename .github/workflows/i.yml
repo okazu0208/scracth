@@ -20,5 +20,6 @@ jobs:
         run: pip install --upgrade pip        
       - name: Install dependencies
         run: pip install -r requirements.txt
+        if: always()
       - name: Run Python
         run: python scratch.py
