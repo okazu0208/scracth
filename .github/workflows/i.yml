@@ -16,8 +16,8 @@ jobs:
         with:
           python-version: '3.10'
           architecture: 'x64'
-      - name: Get Python version
-        run: python -V
+      - name: Upgrade pip
+        run: pip install --upgrade pip        
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run Python
