@@ -14,11 +14,11 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: '3.10'
           architecture: 'x64'
       - name: Get Python version
         run: python -V
       - name: Install dependencies
-        run: pip install -r okazu0208/requirements.txt
+        run: pip install -r requirements.txt
       - name: Run Python
-        run: okazu0208/scratch.py
+        run: scratch.py
