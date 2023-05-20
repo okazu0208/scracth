@@ -19,6 +19,6 @@ jobs:
       - name: Get Python version
         run: python -V
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r scratch/requirements.txt
       - name: Run Python
-        run: scratch.py
+        run: scracth/scratch.py
