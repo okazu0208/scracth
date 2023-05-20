@@ -19,6 +19,6 @@ jobs:
       - name: Get Python version
         run: python -V
       - name: Install dependencies
-        run: pip install -r scratch/requirements.txt
+        run: pip install -r okazu0208/requirements.txt
       - name: Run Python
-        run: scracth/scratch.py
+        run: okazu0208/scratch.py
