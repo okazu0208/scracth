@@ -1,7 +1,5 @@
 import requests
-headers = {
-    "Authorization": "Bearer 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",
-    "Content-Type": "application/vnd.github+json"}
+headers = {"Content-Type": "application/vnd.github+json"}
 
 payload = {
     "event_type": "i",
