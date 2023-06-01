@@ -2,10 +2,7 @@ name: Action Sample
 
 on:
   push:
-    branches: 
-      - master
-  schedule:
-    - cron: '* * * * *'
+    
   workflow_dispatch:
 jobs:
   numpy-test:
@@ -22,5 +19,7 @@ jobs:
         run: pip install --upgrade pip        
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Run Python
+      - name: Run setting
+        run: python setting.py
+      - name: Run main
         run: python scratch.py
