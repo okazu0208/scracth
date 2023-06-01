@@ -1,9 +1,8 @@
 name: Action Sample
 
 on:
-  push:
-    
-  workflow_dispatch:
+  repository_dispatch:
+    types: [i]
 jobs:
   numpy-test:
     runs-on: ubuntu-latest
