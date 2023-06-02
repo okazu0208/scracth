@@ -1,6 +1,6 @@
 import requests
 headers = {"Content-Type": "application/vnd.github+json"}
-
+#ヘッダー
 payload = {
     "event_type": "i",
     "client_payload":{
